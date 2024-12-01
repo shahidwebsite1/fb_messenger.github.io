@@ -1,0 +1,80 @@
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(145deg, #000000, #003366); /* Black to blue gradient */
+}
+
+/* Container Styling */
+.container {
+    text-align: center;
+    background: #3418edc5;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 40px 80px rgba(226, 7, 193, 0.786); /* Blue shadow for container */
+    max-width: 400px;
+    width: 90%;
+}
+    
+/* Heading Styling */
+h1 {
+    font-size: 24px;
+    color: #ffffff; /* White text for heading */
+    margin-bottom: 20px;
+}
+
+/* Input Styling */
+input {
+    padding: 12px;
+    width: 80%;
+    background: #ffffff;
+    border: 1px solid #b3d9ff;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #000000; /* Black text color */
+    outline: none;
+    box-shadow: 0 4px 10px rgba(255, 7, 234, 0.6); /* Blue shadow for input box */
+}
+
+/* Button Styling */
+button {
+    padding: 12px 25px;
+    background: #e50d0d;    
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+}
+
+button:hover {  
+    background: #000000;
+    
+}   
+
+/* Result Text Styling */
+#result {
+    margin-top: 30px;
+    padding: 12px 25px;
+    font-size: 18px;
+    background: #01000697;    
+    color: #ffffff; /* White text for result */
+}
+
+/* Additional Effects */
+button:active {
+    transform: scale(0.95); /* Button press effect */
+}
+
+input:focus {
+    border-color: #004a99;
+    box-shadow: 0 0 12px rgba(0, 0, 255, 0.8); /* Glow on focus for input */
+}
