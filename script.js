@@ -22,8 +22,12 @@ document.getElementById("calculateButton").addEventListener("click", () => {
     onlineTime.setHours(currentTime.getHours() - hours);
     onlineTime.setMinutes(currentTime.getMinutes() - minutes);
 
-    // Format result to show only hours and minutes
-    const formattedTime = onlineTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-    result.innerHTML = `Messenger opened : ${formattedTime} <i class="fas fa-clock clock-icon"></i>`;
+    // Format result to show 12-hour time format with AM/PM
+    const formattedTime = onlineTime.toLocaleTimeString([], { 
+        hour: '2-digit', 
+        minute: '2-digit', 
+        hour12: true // 12-hour format enabled
+    });
 
+    result.innerHTML = `Messenger opened : ${formattedTime} <i class="fas fa-clock clock-icon"></i>`;
 });
